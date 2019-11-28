@@ -29,6 +29,7 @@ public class MemberDAO {
 	}
 
 	public List listMembers() {
+		
 		List list = new ArrayList();
 		try {
 			connDB();
