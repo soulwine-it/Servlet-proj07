@@ -91,7 +91,7 @@ public class MemberDAO {
 			Connection con =dataFactory.getConnection();
 			Statement stmt = con.createStatement();
 			
-			String query = "delete from t_member" + "where id=?";
+			String query = "delete from t_member where id=?";
 			pstmt = con.prepareStatement(query);
 			pstmt.setString(1, id);
 			pstmt.executeUpdate(); //딜리트문을 실행해 테이블에서 해당 id를 삭제
